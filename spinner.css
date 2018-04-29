@@ -1,0 +1,70 @@
+body{
+    background: lightblue;
+}
+.main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -30px;
+    font: 900;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-style: italic;
+    font-size:22px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: -70px;
+}
+/* you can use it but you have must be comment others two style */
+/* 
+.spinner:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top:50%;
+    left:50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    border:3px solid gray;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    box-sizing: border-box;
+    animation: loading .7s linear infinite;
+} */
+/* you can also use it but you have must be comment others two style */
+/* .spinner:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top:50%;
+    left:50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    border:3px solid gray;
+    border-radius: 50%;
+    border-top-color: rgb(0, 14, 15);
+    box-sizing: border-box;
+    animation: loading .7s linear infinite;
+} */
+.spinner:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top:50%;
+    left:50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    border:3px solid gray;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    box-sizing: border-box;
+    animation: loading .7s linear infinite;
+}
+@keyframes loading{
+    to{
+        transform: rotate(360deg);
+    }
+}
